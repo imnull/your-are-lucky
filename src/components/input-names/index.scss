@@ -1,0 +1,48 @@
+.input-names {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    user-select: none;
+    .desc {
+        background-color: #eee;
+        border-radius: 6px;
+        padding: 5px 10px;
+        margin-bottom: 6px;
+        color: #333;
+        font-size: 12px;
+        &.bottom {
+            margin-top: 6px;
+        }
+    }
+    .input-area {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        textarea {
+            font-size: 16px;
+            padding: 1em;
+            resize: none;
+            height: 400px;
+            flex: 1;
+            line-height: 1.5em;
+        }
+    }
+    .input-list {
+        flex: 1;
+        margin: 0;
+        padding: 10px;
+        margin-left: 6px;
+        background-color: #f1f1f1;
+        border-radius: 12px;
+        li {
+            font-size: 16px;
+            list-style: none;
+            padding: 4px 10px;
+            border-bottom: 1px dashed #ddd;
+            &:last-of-type {
+                border: none;
+            }
+        }
+    }
+}
